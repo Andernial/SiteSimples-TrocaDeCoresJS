@@ -1,0 +1,81 @@
+*{
+    color: var(--fontcolor);
+    font-family: helvetica;
+    transition: 2s;
+}
+body{
+    background: var(--bg);
+    padding: 0;
+    margin: 0;
+    transition: 2s;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   height: 100vh;
+    
+}
+.box{
+    background-color: var(--pb);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px var(--fontcolor);
+}
+ul{
+    font-family: sans-serif
+}
+
+li{
+    list-style: circle;
+}
+.lista{
+    list-style: square;
+}
+
+:root{
+--green: rgb(94, 255, 0);
+--white: white;
+--black: black;
+--blue: rgb(0, 255, 229);
+}
+
+.tema-claro{
+    --bg: var(--green);
+    --fontcolor: var(--black);
+    --pb: var(--blue);
+    --btnFontColor: var(--green);
+    --btnBg: var(--black);
+}
+
+.tema-escuro{
+    --bg: var(--black);
+    --fontcolor: var(--green);
+    --pb: var(--white);
+    --btnBg: var(--blue);
+    --btnFontColor: var(--white)
+}
+.botao-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.btn{
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    border-radius: 15px;
+    padding: 10px;
+    transition: 0.5s; 
+    
+}
+.btn:focus {
+    outline-style: none;
+}
+.btn:hover{
+     cursor: pointer;
+     scale: 1.2;
+     transition: 0.5s; 
+}
